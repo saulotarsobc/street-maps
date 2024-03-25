@@ -26,3 +26,7 @@
     }
 ]
 ```
+
+# Referencias
+
+- [Flaticon](https://www.flaticon.com/)
