@@ -30,3 +30,4 @@
 # Referencias
 
 - [Flaticon](https://www.flaticon.com/)
+- [Generate Open Graph Meta Tags](https://www.opengraph.xyz/)
