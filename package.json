@@ -1,0 +1,17 @@
+{
+  "name": "street-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serve -p 80",
+    "sass": "sass -w scss/main.scss css/main.min.css -s compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.72.0",
+    "serve": "^14.2.1"
+  }
+}
