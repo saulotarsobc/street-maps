@@ -37,7 +37,8 @@ if (dataParam !== null) {
       marker.bindPopup(
         `
         <center>
-          <h3>${info.nome}</h3>
+          <h3>${info?.nome}</h3>
+          <p>${info?.descricao}</p>
           <span>
             <a href="https://www.google.com/maps/dir/?api=1&destination=${info.latitude},${info.longitude}" target="_blanck">Ir para</a>
           </span>
