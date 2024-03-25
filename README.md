@@ -1,6 +1,10 @@
 # LS Street Maps
 
-## Json
+> GET https://saulotarsobc.github.io/street-maps/?data={base64_json}
+
+👉 [Exemplo aki](https://saulotarsobc.github.io/street-maps/?data=W3sibm9tZSI6IkFlcm9wb3J0byIsImRlc2NyaWNhbyI6IkRlc2NyaWNhbyBkZXNjcmljYW8gZGVzY3JpY2FvIGRlc2NyaWNhbyBkZXNjcmljYW8iLCJsYXRpdHVkZSI6LTIuNDM3NjIzLCJsb25naXR1ZGUiOi01NC43MjI0NDV9LHsibm9tZSI6IkFlcm9wb3J0byAyIiwiZGVzY3JpY2FvIjoiRGVzY3JpY2FvIGRlc2NyaWNhbyBkZXNjcmljYW8gZGVzY3JpY2FvIGRlc2NyaWNhbyIsImxhdGl0dWRlIjotMi40NDI2MjAsImxvbmdpdHVkZSI6LTU0LjcyNDA3OH0seyJub21lIjoiQWVyb3BvcnRvIDMiLCJkZXNjcmljYW8iOiJEZXNjcmljYW8gZGVzY3JpY2FvIGRlc2NyaWNhbyBkZXNjcmljYW8gZGVzY3JpY2FvIiwibGF0aXR1ZGUiOi0yLjQzODA1NywibG9uZ2l0dWRlIjotNTQuNzIyOTA1fV0=)
+
+## Query
 
 ### Base64
 
