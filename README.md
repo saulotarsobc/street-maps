@@ -29,5 +29,8 @@
 
 # Referencias
 
+- [Leafletjs](https://leafletjs.com/)
+  - [GEOJSON](https://geojson.org/)
+  - [React Leaflet](https://react-leaflet.js.org/docs/start-introduction/)
 - [Flaticon](https://www.flaticon.com/)
 - [Generate Open Graph Meta Tags](https://www.opengraph.xyz/)
