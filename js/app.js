@@ -19,11 +19,12 @@ if (dataParam !== null) {
   // .openPopup();
 
   try {
-    const data = JSON.parse(dataParam);
-    console.table(data);
+    const jsonStringData = atob(dataParam);
+    const uriDecoded = decodeURIComponent(jsonStringData);
+    const jsonData = JSON.parse(uriDecoded);
 
     var map = L.map("map").setView(
-      [data[0].latitude, data[0].longitude],
+      [jsonData[0].latitude, jsonData[0].longitude],
       ZOOM_DEFALT
     );
 
@@ -33,16 +34,15 @@ if (dataParam !== null) {
         '&copy; <a href="http://www.openstreetmap.org/copyright">OSM</a>',
     }).addTo(map);
 
-    data.forEach((info) => {
+    jsonData.forEach((info) => {
       var marker = L.marker([info.latitude, info.longitude]).addTo(map);
-      marker
-        .bindPopup(`
+      marker.bindPopup(`
         <center>
           <h3>${info.nome}</h3>
           <span><a href="https://www.google.com/maps?q=${info.latitude},${info.longitude}" target="_blanck">Ir para</a></span>
         </center>
-        `)
-        // .openPopup();
+        `);
+      // .openPopup();
     });
   } catch (error) {
     console.log(error);
