@@ -1,23 +1,10 @@
-const ZOOM_DEFALT = 16;
+const ZOOM_DEFALT = 15;
 
-// Obtém a URL atual
 const url = window.location.href;
-
-// Cria um objeto URLSearchParams com a string de consulta da URL
 const params = new URLSearchParams(new URL(url).search);
-
-// Obtém o valor do parâmetro 'data'
 const dataParam = params.get("data");
 
-// Verifica se o parâmetro 'data' existe
 if (dataParam !== null) {
-  /* add marker */
-  // var marker = L.marker([LOCATIONS.libras[0], LOCATIONS.libras[1]]).addTo(map);
-  // marker.bindPopup(
-  //   '<span><b>Salão do Reino</b><br><a href="https://www.google.com/maps?q=-2.438057,-54.722905" target="_blanck">IR</a></span>'
-  // )
-  // .openPopup();
-
   try {
     const jsonStringData = atob(dataParam);
     const uriDecoded = decodeURIComponent(jsonStringData);
@@ -36,13 +23,14 @@ if (dataParam !== null) {
 
     jsonData.forEach((info) => {
       var marker = L.marker([info.latitude, info.longitude]).addTo(map);
-      marker.bindPopup(`
+      marker.bindPopup(
+        `
         <center>
           <h3>${info.nome}</h3>
           <span><a href="https://www.google.com/maps?q=${info.latitude},${info.longitude}" target="_blanck">Ir para</a></span>
         </center>
-        `);
-      // .openPopup();
+        `
+      );
     });
   } catch (error) {
     console.log(error);
